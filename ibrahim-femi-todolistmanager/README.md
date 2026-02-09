@@ -5,6 +5,9 @@ A modern GUI-based todo list application written in C++ using Qt Widgets.
 ## Author
 
 **SIAO Development Team**
+PARTICIPANTS
+1. SHOKOYA IBRAHIM 246240011 (ICE)
+2. AKINWALE OLORUNFEMI 246240015 (ICE)
 
 ## Project Description
 
