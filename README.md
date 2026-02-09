@@ -1,60 +1,90 @@
-# OOP-Cplusplus-Project-300Level-NUN-2026
-This is the github repo for C++ project for computer engineering in 2025/2026 in Nile University of Nigeria
+# Qt Music Player
+MADE BY IFON ITOR 20233246
+ JASON HIPPOLITE 20232884,
+ PRINCE UMEH 20233270,
+Qt Music Player is a simple desktop music player built with **Qt** and **C++**.  
+It provides a clean interface for playing basic audio files using Qt Multimedia.
 
+---
 
-Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-Cplusplus-Project-300Level-NUN-2026.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
+## Features
 
-    Fork the Repository:
+- Graphical interface built with Qt Widgets  
+- Play, pause, stop, next and previous controls  
+- Open a folder containing music files  
+- Displays “Now Playing” track name  
+- Progress bar and time display  
+- Volume control slider  
+- Keyboard-friendly and beginner-friendly project  
 
-If you don't have write access to the original repository, you need to fork it. This creates a copy of the repository under your GitHub account.
+---
 
-    Clone the Repository:
+## Supported Audio Formats
 
-Clone your forked repository to your local machine using the git clone command. Replace <repository> with the URL of your forked repository.
+This version **does NOT support MP3**.
 
-git clone https://github.com/your-username/your-forked-repository.git cd your-forked-repository
+Supported formats depend on the Qt Multimedia backend and system codecs.
 
-    Create a Branch:
+Currently tested formats:
 
-Create a new branch for your changes. It's a good practice to create a branch for each feature or bug fix.
+- WAV  
+- OGG (on some systems)  
+- Other uncompressed formats supported by Qt
 
-git checkout -b branch-name
+❌ MP3 is **not supported** in this build.
 
-    Make Changes:
+If you try to open an MP3 file:
+- It will not play  
+- Time will stay at `0:00 / 0:00`  
+- “Now Playing” may remain `(none)`
 
-Make the necessary changes to the codebase on your local machine. In the changes add your code to the right assignment, like add to Assignment 1 folder
+---
 
-    Commit Changes:
+## Requirements
 
-Once you've made your changes, commit them to your local branch.
+- Qt Creator  
+- Qt 5/Qt 6 with Qt Multimedia  
+- C++ compiler (MinGW or MSVC)  
+- Windows OS  
 
-git add . git commit -m "Your name’s assignment"
+---
 
-    Push Changes:
+## How to Build and Run
 
-Push your changes to your forked repository on GitHub.
+### Using Qt Creator
 
-git push origin branch-name
+1. Open Qt Creator  
+2. Click **Open Project**  
+3. Open `QtMusicPlayer.pro` or `CMakeLists.txt`  
+4. Configure your kit  
+5. Click **Run**
 
-Although, I am fine with using the main branch
+---
 
-    Create a Pull Request:
+## How to Use
 
-Go to your forked repository on GitHub. You should see a notification prompting you to create a pull request. If not, navigate to the "Pull Requests" tab and click on "New Pull Request."
+1. Launch the app  
+2. Click **Open Folder**  
+3. Select a folder containing supported audio files (e.g. WAV)  
+4. Select a song from the list  
+5. Use:
+   - Prev  
+   - Play  
+   - Stop  
+   - Next  
+6. Adjust volume with the slider  
 
-Choose the base repository (the original repository) and the branch you want to merge into. Also, choose your forked repository and the branch with your changes.
+---
 
-    Provide Details:
+## Standalone EXE
 
-Write a clear and concise title and description for your pull request. Explain the purpose of your changes.
+To create a standalone executable:
 
-    Submit Pull Request:
+1. Build in **Release mode**  
+2. Locate the `.exe` in your build folder  
+3. Run:
 
-Click the "Create Pull Request" button to submit your pull request. This will notify the maintainers of the original repository that you have changes you'd like them to review.
+```bash
+windeployqt QtMusicPlayer.exe
 
-    Discussion and Changes:
-
-Be prepared for feedback and discussion. Make the necessary changes locally, commit them, and push them to your branch.
-
-Repeat this process until your changes are approved and merged into the original repository.
 
