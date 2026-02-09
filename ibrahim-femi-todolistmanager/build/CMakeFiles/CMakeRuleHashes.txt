@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+6c338a55fee72ebbd0996ec473d713a5 CMakeFiles/TodoListManager_autogen
+9110b40e07e5e8b96cf788c96226fc41 TodoListManager_autogen/timestamp
