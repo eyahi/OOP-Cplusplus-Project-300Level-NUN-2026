@@ -1,0 +1,22 @@
+^C:\USERS\ABDUL\ONEDRIVE\DESKTOP\TODOAPP\BUILD_DEBUG\CMAKEFILES\96A82F56573059689C9FA67468AE0987\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd C:\Users\abdul\OneDrive\Desktop\ToDoApp\build_debug
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ABDUL\ONEDRIVE\DESKTOP\TODOAPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/abdul/OneDrive/Desktop/ToDoApp -BC:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug --check-stamp-file C:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

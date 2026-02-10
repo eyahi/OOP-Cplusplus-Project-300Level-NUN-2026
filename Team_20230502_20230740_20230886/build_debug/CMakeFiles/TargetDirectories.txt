@@ -1,0 +1,4 @@
+C:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug/CMakeFiles/ToDoApp.dir
+C:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug/CMakeFiles/INSTALL.dir
+C:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/abdul/OneDrive/Desktop/ToDoApp/build_debug/CMakeFiles/ZERO_CHECK.dir
