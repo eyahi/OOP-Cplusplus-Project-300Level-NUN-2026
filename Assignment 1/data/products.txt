@@ -1,0 +1,5 @@
+1,iPhone 13,Tech,400,0
+2,Nip,games,155,0
+3,Samsung Flip 7,Tech,2.1001e+006,0
+4,Macbook,Tech,500,0
+5,Hp,Games,300,0
