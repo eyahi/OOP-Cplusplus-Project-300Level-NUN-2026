@@ -1,0 +1,10 @@
+/build/
+**/build/
+*.exe
+*.dll
+*.obj
+*.o
+*.log
+*.ninja
+.ninja_deps
+.ninja_log
