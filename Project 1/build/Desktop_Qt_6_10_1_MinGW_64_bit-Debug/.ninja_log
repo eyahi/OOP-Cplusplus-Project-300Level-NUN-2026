@@ -1,0 +1,16 @@
+# ninja log v6
+7	1177	7907083193504736	untitled1_autogen/timestamp	11ad58883e8929da
+7	1177	7907083193504736	untitled1_autogen/mocs_compilation.cpp	11ad58883e8929da
+1206	3437	7907083195336053	CMakeFiles/untitled1.dir/DiaryEntry.cpp.obj	caf711b3c5846a16
+7	1177	7907083193504736	C:/Users/tiolu/Documents/untitled1/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/untitled1_autogen/timestamp	11ad58883e8929da
+1198	6788	7907083195243330	CMakeFiles/untitled1.dir/DiaryApp.cpp.obj	f395ee055ed2855e
+7	1177	7907083193504736	C:/Users/tiolu/Documents/untitled1/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/untitled1_autogen/mocs_compilation.cpp	11ad58883e8929da
+1215	7649	7907083195429440	CMakeFiles/untitled1.dir/PasswordManager.cpp.obj	69a99754d6131418
+1226	4801	7907083195556752	CMakeFiles/untitled1.dir/DiaryStorage.cpp.obj	c75ab58998f439e0
+1192	5010	7907083195161883	CMakeFiles/untitled1.dir/untitled1_autogen/mocs_compilation.cpp.obj	b4d06da4dd0c44f
+58	550	7907084037937145	untitled1_autogen/timestamp	11ad58883e8929da
+58	550	7907084037937145	untitled1_autogen/mocs_compilation.cpp	11ad58883e8929da
+58	550	7907084037937145	C:/Users/tiolu/Documents/untitled1/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/untitled1_autogen/timestamp	11ad58883e8929da
+58	550	7907084037937145	C:/Users/tiolu/Documents/untitled1/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/untitled1_autogen/mocs_compilation.cpp	11ad58883e8929da
+552	4111	7907084042920954	CMakeFiles/untitled1.dir/main.cpp.obj	6cbfaa33f62a773f
+4111	4604	7907084078465663	untitled1.exe	43c81dcf6c5e62c9
