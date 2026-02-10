@@ -1,0 +1,1 @@
+g++ -std=c++17 sudoku.cpp -I"./SFML3/include" -L"./SFML3/lib" -DSFML_STATIC -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lsfml-main -lgdi32 -lwinmm -lopengl32 -lfreetype -lws2_32 -static -static-libgcc -static-libstdc++ -o sudoku.exe
