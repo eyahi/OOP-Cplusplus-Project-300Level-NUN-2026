@@ -1,0 +1,14 @@
+# Qt build folders
+build/
+*.pro.user
+*.pro.user.*
+*.autosave
+*.o
+*.obj
+*.exe
+*.dll
+*.json
+*.cmake
+CMakeFiles/
+Makefile
+cmake_install.cmake
