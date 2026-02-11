@@ -1,0 +1,11 @@
+# Flight data format: id|name|price|airline|origin|destination|departure|arrival|seats|flightNum
+1|New York to London|450.00|British Airways|New York|London|2026-02-15 08:00|2026-02-15 20:00|180|BA178
+2|London to Paris|120.00|Air France|London|Paris|2026-02-16 10:00|2026-02-16 12:30|150|AF1234
+3|Paris to Rome|95.00|Alitalia|Paris|Rome|2026-02-17 14:00|2026-02-17 16:00|140|AZ456
+4|New York to Los Angeles|280.00|American Airlines|New York|Los Angeles|2026-02-15 09:00|2026-02-15 14:00|200|AA100
+5|Los Angeles to Tokyo|850.00|Japan Airlines|Los Angeles|Tokyo|2026-02-18 11:00|2026-02-19 16:00|250|JL061
+6|Tokyo to Sydney|720.00|Qantas|Tokyo|Sydney|2026-02-20 22:00|2026-02-21 09:00|180|QF22
+7|London to New York|480.00|Virgin Atlantic|London|New York|2026-02-22 11:00|2026-02-22 14:00|220|VS4
+8|Dubai to London|380.00|Emirates|Dubai|London|2026-02-23 07:00|2026-02-23 12:00|300|EK3
+9|Paris to New York|520.00|Delta|Paris|New York|2026-02-24 10:30|2026-02-24 13:30|180|DL8706
+10|Rome to Barcelona|85.00|Vueling|Rome|Barcelona|2026-02-25 08:00|2026-02-25 10:00|160|VY6101
