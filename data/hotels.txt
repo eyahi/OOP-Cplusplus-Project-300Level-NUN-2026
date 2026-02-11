@@ -1,0 +1,13 @@
+# Hotel data format: id|name|price|location|city|stars|rooms|checkIn|checkOut|amenities
+1|The Ritz London|450.00|150 Piccadilly, Mayfair|London|5|136|15:00|12:00|WiFi,Pool,Spa,Restaurant,Bar,Gym
+2|Hotel Plaza Athenee|680.00|25 Avenue Montaigne|Paris|5|154|14:00|11:00|WiFi,Pool,Spa,Restaurant,Concierge
+3|Rome Marriott Grand Hotel|220.00|Via Vittorio Emanuele Orlando 3|Rome|4|161|15:00|12:00|WiFi,Restaurant,Bar,Gym,Parking
+4|The Hoxton Shoreditch|180.00|81 Great Eastern Street|London|4|210|14:00|11:00|WiFi,Restaurant,Bar,Coworking
+5|Hotel Le Bristol|780.00|112 Rue du Faubourg Saint-Honore|Paris|5|188|15:00|12:00|WiFi,Pool,Spa,Michelin Restaurant
+6|Times Square Marriott|350.00|1535 Broadway|New York|4|575|16:00|11:00|WiFi,Restaurant,Gym,Bar
+7|The Standard High Line|290.00|848 Washington Street|New York|4|338|15:00|12:00|WiFi,Pool,Restaurant,Bar,Rooftop
+8|Hilton Tokyo|210.00|6-2 Nishi-Shinjuku 6-chome|Tokyo|4|806|15:00|12:00|WiFi,Pool,Spa,Restaurant,Bar
+9|Park Hyatt Sydney|420.00|7 Hickson Road|Sydney|5|155|15:00|11:00|WiFi,Pool,Spa,Harbor View
+10|Beverly Hills Hotel|550.00|9641 Sunset Boulevard|Los Angeles|5|208|16:00|12:00|WiFi,Pool,Spa,Restaurant,Bar
+11|Burj Al Arab|1200.00|Jumeirah Street|Dubai|5|202|15:00|12:00|WiFi,Pool,Spa,Helipad,Butler Service
+12|W Barcelona|320.00|Placa de la Rosa dels Vents|Barcelona|5|473|15:00|12:00|WiFi,Pool,Beach,Spa,Restaurant

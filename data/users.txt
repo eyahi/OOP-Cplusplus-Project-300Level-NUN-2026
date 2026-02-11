@@ -1,0 +1,4 @@
+# User data format: id|username|password|email|fullName|phone
+1|admin|admin123|admin@travelbook.com|System Administrator|+1-555-0100
+2|johndoe|john123|john.doe@email.com|John Doe|+1-555-0101
+3|janesmith|jane456|jane.smith@email.com|Jane Smith|+44-20-7946-0958

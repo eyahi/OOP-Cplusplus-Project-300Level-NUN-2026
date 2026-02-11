@@ -1,0 +1,48 @@
+# Build artifacts
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Executables in root (keep ones in build/)
+/TravelBooking.exe
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Build directory (exclude most, keep executables)
+build/*
+!build/TravelBookingConsole.exe
+!build/TravelBookingGUI.exe
+!build/data/
+
+# Nana library (large, can be re-cloned)
+lib/nana/
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln
+*.vcxproj*
+
+# Temporary files
+*.tmp
+*.log
+
+# Root directory files to exclude
+/guidelines.txt
+/*.pdf
+/Makefile
+
+# Submission helper files (not part of actual project)
+SUBMIT.md
+SUBMISSION_SUMMARY.md
+SUBMISSION_CHECKLIST.md
+SUBMISSION_GUIDE.md
+CLASS_SUBMISSION_STEPS.md
+submit.ps1
+submit.sh
