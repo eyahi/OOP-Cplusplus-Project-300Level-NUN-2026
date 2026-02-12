@@ -1,60 +1,106 @@
-# OOP-Cplusplus-Project-300Level-NUN-2026
-This is the github repo for C++ project for computer engineering in 2025/2026 in Nile University of Nigeria
+Qt Sudoku 🎲
+Project Overview
 
+Qt Sudoku is a desktop Sudoku puzzle game developed in C++ using Qt 6 (Widgets) for the graphical user interface.
 
-Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-Cplusplus-Project-300Level-NUN-2026.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
+The application provides a clean, modern interface for playing classic 9×9 Sudoku puzzles. It includes puzzle generation, real-time validation, hints, timer, difficulty levels, and the ability to save/load games.
 
-    Fork the Repository:
+This project was built to demonstrate:
 
-If you don't have write access to the original repository, you need to fork it. This creates a copy of the repository under your GitHub account.
+Object-oriented programming in C++
+GUI development with Qt 6 (Widgets)
+2D grid manipulation and logic implementation
+Event handling and user interaction
+File I/O for saving/loading game states
+Input validation and error prevention
 
-    Clone the Repository:
+Features
 
-Clone your forked repository to your local machine using the git clone command. Replace <repository> with the URL of your forked repository.
+🧩 Multiple difficulty levels (Easy, Medium, Hard, Expert)
+🔢 Classic 9×9 Sudoku grid with number input
+✅ Real-time conflict detection (row, column, 3×3 block)
+💡 Hint system (reveals one correct number)
+⏱ Game timer with pause/resume
+💾 Save and load game progress
+🔄 New game generation with multiple puzzle patterns
+🖱 Mouse and keyboard input support
+🎨 Clean, responsive, and modern-looking interface
+⚠️ Prevents invalid moves with visual feedback
+🏆 Completion celebration with congratulations dialog
 
-git clone https://github.com/your-username/your-forked-repository.git cd your-forked-repository
+Technologies Used
 
-    Create a Branch:
+Language:     C++ (C++17)
+GUI Framework: Qt 6 (Widgets)
+Build System:  CMake
+Platform:      Windows (cross-platform compatible with minor adjustments)
 
-Create a new branch for your changes. It's a good practice to create a branch for each feature or bug fix.
+Project Structure
+QtSudoku/
+│
+├── main.cpp
+├── mainwindow.h
+├── mainwindow.cpp
+├── sudokugrid.h
+├── sudokugrid.cpp
+├── sudokugenerator.h
+├── sudokugenerator.cpp
+├── CMakeLists.txt
+├── README.txt
+└── resources/           (icons, stylesheets if used)
 
-git checkout -b branch-name
+⚠️ Note: UI is built programmatically in C++ (no .ui files from Qt Designer are used).
 
-    Make Changes:
+Build Instructions (Qt Creator – Recommended)
 
-Make the necessary changes to the codebase on your local machine. In the changes add your code to the right assignment, like add to Assignment 1 folder
+Requirements
 
-    Commit Changes:
+Qt 6.x (Widgets module)
+CMake ≥ 3.16
+MinGW or compatible C++ compiler
 
-Once you've made your changes, commit them to your local branch.
+Steps
 
-git add . git commit -m "Your name’s assignment"
+1. Open Qt Creator
+2. Select "Open Project"
+3. Choose CMakeLists.txt
+4. Configure the project with a Qt 6 Kit
+5. Build and Run
 
-    Push Changes:
+How to Play
 
-Push your changes to your forked repository on GitHub.
+Launch the application
+Click "New Game" and select difficulty
+Click on any empty cell and type a number (1–9) or use the on-screen number pad
+Green = correct placement
+Red = conflict (same row/column/block)
+Use Hint button when stuck
+Save progress with File → Save Game
+Load previous game with File → Load Game
 
-git push origin branch-name
+Error Handling
 
-Although, I am fine with using the main branch
+The application gracefully handles:
+Invalid number input
+Loading corrupted/incompatible save files
+Attempting to place numbers in pre-filled cells
+User-friendly warning messages are shown via QMessageBox
 
-    Create a Pull Request:
+Known Limitations
 
-Go to your forked repository on GitHub. You should see a notification prompting you to create a pull request. If not, navigate to the "Pull Requests" tab and click on "New Pull Request."
+No pencil marks / candidate notes (classic mode only)
+No auto-solver (only human play + hints)
+No online puzzle downloading
+No multiple undo/redo stack (single-step undo only)
 
-Choose the base repository (the original repository) and the branch you want to merge into. Also, choose your forked repository and the branch with your changes.
+Authors
 
-    Provide Details:
+Ajoku Edmonson 20230789
+Benjamin Uchechukwu 20233482
+Ibom Chinonso 20231681
+C++ / Qt Sudoku Project
 
-Write a clear and concise title and description for your pull request. Explain the purpose of your changes.
+License
 
-    Submit Pull Request:
-
-Click the "Create Pull Request" button to submit your pull request. This will notify the maintainers of the original repository that you have changes you'd like them to review.
-
-    Discussion and Changes:
-
-Be prepared for feedback and discussion. Make the necessary changes locally, commit them, and push them to your branch.
-
-Repeat this process until your changes are approved and merged into the original repository.
+This project is for educational purposes.
 
