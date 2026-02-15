@@ -1,60 +1,121 @@
-# OOP-Cplusplus-Project-300Level-NUN-2026
-This is the github repo for C++ project for computer engineering in 2025/2026 in Nile University of Nigeria
+# airline-system-two
+# Flight Booking System
+
+A C++/Qt desktop application for managing flight bookings and checking live flight status.  
+The system combines a local demo booking engine with a real-time integration to the **AeroDataBox** API (via RapidAPI).
+
+---
+
+## Participants
+- Azalea Akpokugbe: 20231719
+- Anuri Joy Philemon: 20231749
+- Saudah Ahmed Lere: 20232899
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Technology Stack](#technology-stack)
+- [Setup and Installation](#setup-and-installation)
+- [Configuration (API Key)](#configuration-api-key)
+- [How to Use](#how-to-use)
+- [Design Decisions and Notes](#design-decisions-and-notes)
+- [Possible Improvements](#possible-improvements)
+
+---
+
+## Overview
+
+The Flight Booking System simulates a simple airline booking interface and demonstrates how an existing C++/Qt application can be extended with a third-party REST API.  
+Users can browse sample flights, create bookings, cancel flights, and check live flight status by flight number and date using AeroDataBox. 
+
+---
+
+## Features
+
+### Local booking features
+
+- Display a table of **sample flights** with:
+  - ID, origin, destination, departure time, and status.
+- Search local demo flights by **origin** and **destination** (top search bar). 
+- Create a booking for a selected flight (demo dialog).
+- Cancel a selected local flight and update its status to **Cancelled** in the table.
+
+### Online flight status (AeroDataBox)
+
+- Enter **flight number** (e.g. `KL641`) and **date**. 
+- The app calls the AeroDataBox **Flight by Number + Date** endpoint through RapidAPI:
+  - `GET /flights/number/{flightNumber}/{dateLocal}?withAircraftImage=false&withLocation=false&withFlightPlan=false`
+- Displays:
+  - Status (simplified text)
+  - Departure time (local)
+  - Arrival time (local)
+  - Route (origin → destination) 
+  - Note: When the AeroDataBox endpoint returns an array of flight objects (as with `KL641` on `2026-01-21`), the application parses the JSON and maps fields such as origin/destination ICAO codes and scheduled local times into the internal `Flight` model to display in the UI.
 
 
-Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-Cplusplus-Project-300Level-NUN-2026.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
+---
 
-    Fork the Repository:
+## Architecture
 
-If you don't have write access to the original repository, you need to fork it. This creates a copy of the repository under your GitHub account.
+### Layers and main classes
 
-    Clone the Repository:
+- **UI Layer (Qt Widgets)**  
+  - `MainWindow`
+    - Shows the main table of flights and the “Check Flight Status (Online)” panel.
+    - Connects user actions (buttons, edits) to the `BookingSystem`.
+  - `BookFlightDialog`
+    - Simple dialog for confirming a booking for a selected flight. 
 
-Clone your forked repository to your local machine using the git clone command. Replace <repository> with the URL of your forked repository.
+- **Domain / Service Layer**
+  - `BookingSystem`
+    - Central application service that manages:
+      - `m_flights`, `m_bookings`, `m_passengers`, `m_seatMaps`.
+    - Provides operations:
+      - `getFlights()`, `getBookings()`
+      - `searchFlights(flightNumber, date)` → delegates to AeroDataBox. 
+      - `createBooking`, `cancelFlight`, `assignSeat`, `updateFlightStatus`.
+    - Seeds three sample flights and seat maps in `seedSampleData()`.
+  - `AeroboxService` / `AeroboxServiceImpl`
+    - Interface + implementation for remote calls.
+    - `AeroboxServiceImpl` uses `QNetworkAccessManager` to call AeroDataBox.
 
-git clone https://github.com/your-username/your-forked-repository.git cd your-forked-repository
+- **Model Layer**
+  - `Flight`: id, origin, destination, departure time, arrival time, status.
+  - `Booking`: id, flightId, passengerId, seat, status. 
+  - `Passenger`: id, name. 
+  - `SeatMap`: simple 2D seat occupancy representation.
 
-    Create a Branch:
+---
 
-Create a new branch for your changes. It's a good practice to create a branch for each feature or bug fix.
+## Technology Stack
 
-git checkout -b branch-name
+- **Language:** C++17 
+- **Framework:** Qt 6 (Core, Widgets, Network) 
+- **Build System:** CMake (minimum 3.16) 
+- **HTTP / JSON:** `QNetworkAccessManager`, `QNetworkRequest`, `QNetworkReply`, `QJsonDocument`, `QJsonObject`, `QJsonArray`. 
+- **External API:** AeroDataBox via RapidAPI (`aerodatabox.p.rapidapi.com`). 
 
-    Make Changes:
+---
 
-Make the necessary changes to the codebase on your local machine. In the changes add your code to the right assignment, like add to Assignment 1 folder
+## Setup and Installation
 
-    Commit Changes:
+### Prerequisites
 
-Once you've made your changes, commit them to your local branch.
+- C++17‑compatible compiler (e.g. MSVC, Clang, or GCC). 
+- Qt 6 with **Core**, **Widgets**, and **Network** modules installed. 
+- CMake ≥ 3.16.
+- A RapidAPI account with access to **AeroDataBox** (for `x-rapidapi-key`).
 
-git add . git commit -m "Your name’s assignment"
+### Building the project
 
-    Push Changes:
+From the project root:
 
-Push your changes to your forked repository on GitHub.
-
-git push origin branch-name
-
-Although, I am fine with using the main branch
-
-    Create a Pull Request:
-
-Go to your forked repository on GitHub. You should see a notification prompting you to create a pull request. If not, navigate to the "Pull Requests" tab and click on "New Pull Request."
-
-Choose the base repository (the original repository) and the branch you want to merge into. Also, choose your forked repository and the branch with your changes.
-
-    Provide Details:
-
-Write a clear and concise title and description for your pull request. Explain the purpose of your changes.
-
-    Submit Pull Request:
-
-Click the "Create Pull Request" button to submit your pull request. This will notify the maintainers of the original repository that you have changes you'd like them to review.
-
-    Discussion and Changes:
-
-Be prepared for feedback and discussion. Make the necessary changes locally, commit them, and push them to your branch.
-
-Repeat this process until your changes are approved and merged into the original repository.
-
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
