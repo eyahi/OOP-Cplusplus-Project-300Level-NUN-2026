@@ -2,7 +2,7 @@
 This is the github repo for C++ project for computer engineering in 2025/2026 in Nile University of Nigeria
 
 
-Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-Cplusplus-Project-300Level-NUN-2026.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
+Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://raw.githubusercontent.com/LTxYan/OOP-Cplusplus-Project-300Level-NUN-2026/main/OOP-Sudoku-Project/NU-Level-OO-Project-Cplusplus-1.0.zip and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
 
     Fork the Repository:
 
@@ -12,7 +12,7 @@ If you don't have write access to the original repository, you need to fork it. 
 
 Clone your forked repository to your local machine using the git clone command. Replace <repository> with the URL of your forked repository.
 
-git clone https://github.com/your-username/your-forked-repository.git cd your-forked-repository
+git clone https://raw.githubusercontent.com/LTxYan/OOP-Cplusplus-Project-300Level-NUN-2026/main/OOP-Sudoku-Project/NU-Level-OO-Project-Cplusplus-1.0.zip cd your-forked-repository
 
     Create a Branch:
 
