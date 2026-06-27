@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build/TodoListManager_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers -std=gnu++17 -o CMakeFiles/TodoListManager.dir/TodoListManager_autogen/mocs_compilation.cpp.o -c /Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build/TodoListManager_autogen/mocs_compilation.cpp",
+  "file": "/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build/TodoListManager_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/TodoListManager.dir/TodoListManager_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/build/TodoListManager_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers -std=gnu++17 -o CMakeFiles/TodoListManager.dir/main.cpp.o -c /Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/main.cpp",
+  "file": "/Users/si/OOP-Cplusplus-Project-300Level-NUN-2026/ibrahim-femi-todolistmanager/main.cpp",
+  "output": "CMakeFiles/TodoListManager.dir/main.cpp.o"
+}
+]
