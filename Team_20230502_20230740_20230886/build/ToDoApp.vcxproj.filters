@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\include_Debug\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\include_Release\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\include_MinSizeRel\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\include_RelWithDebInfo\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\CMakeFiles\760029c37901850c49d036c11b418fac\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\mainwindow.ui" />
+    <None Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\abdul\OneDrive\Desktop\ToDoApp\build\ToDoApp_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{876E79B9-7169-3CDB-8E65-CD809C5FD2E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{79199EA3-F5B0-3B3A-8E89-CF3EA3628731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754186E7-8FDE-3653-907A-FC1639377416}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
