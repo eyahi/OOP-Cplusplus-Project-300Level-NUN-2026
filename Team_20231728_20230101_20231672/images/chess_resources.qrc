@@ -1,0 +1,19 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="/images">
+    <!-- List ALL your actual image files -->
+    <file>wk.png</file>
+    <file>wq.png</file>
+    <file>wr.png</file>
+    <file>wb.png</file>
+    <file>wn.png</file>
+    <file>wp.png</file>
+    <file>bk.png</file>
+    <file>bq.png</file>
+    <file>br.png</file>
+    <file>bb.png</file>
+    <file>bn.png</file>
+    <file>bp.png</file>
+    <file>homebg.png</file>
+</qresource>
+</RCC>
