@@ -1,0 +1,5 @@
+C:/Users/itsch/OneDrive/Desktop/MyDairyApp/build/CMakeFiles/DiaryApp.dir
+C:/Users/itsch/OneDrive/Desktop/MyDairyApp/build/CMakeFiles/edit_cache.dir
+C:/Users/itsch/OneDrive/Desktop/MyDairyApp/build/CMakeFiles/rebuild_cache.dir
+C:/Users/itsch/OneDrive/Desktop/MyDairyApp/build/CMakeFiles/DiaryApp_autogen_timestamp_deps.dir
+C:/Users/itsch/OneDrive/Desktop/MyDairyApp/build/CMakeFiles/DiaryApp_autogen.dir
